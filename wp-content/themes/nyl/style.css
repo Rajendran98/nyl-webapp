@@ -1,0 +1,16 @@
+
+.case-study .banner-img{
+	margin-bottom: 0 !important;
+}
+.empty_line{
+	padding: 25px !important;
+}
+.tabshow{
+	display: none;
+}
+.top-space{
+	margin-top: 30px;
+}
+.error-name,.error-phone,.error-mail,.error-message,.error-mess,.error-mil,.error-nme{
+	color: red !important;
+}

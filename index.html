@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1.0" />
+		<link rel="shortcut icon" href="wp-content/uploads/2020/11/favicon-32x32-1.png"/>
+		<title> | NYL Technology</title>
+	
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="wp-content/themes/nyl/style.css">
+		<link rel="stylesheet"  href="wp-content/themes/nyl/css/bootstrap.css">
+		<link rel="stylesheet" href="wp-content/themes/nyl/css/fonts.css">
+		<link rel="stylesheet" href="wp-content/themes/nyl/css/animation.css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="wp-content/themes/nyl/css/font-awesome.min1849.css">
+<!-- jQuery and JS bundle w/ Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+			<style>
+			body{
+				background-color: #fff;
+			}  
+			.render-blk{ opacity:0; }
+			header{position:relative;z-index:99;background:#fff}
+			header .container{padding:25px 30px;background:#fff}
+			header .links li{display:inline-block;margin:0 12px}
+			header .links li:last-child{margin-right:0}
+			header .links li a{color:#1d2023;padding:10px 0;font-size:14px;position:relative}
+			header .links li a:after{content:'';position:absolute;bottom:8px;left:0;width:0;height:1px;background-color:#fff;-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear}
+			header .links li a:hover{font-size:15px}
+			header .links li a:hover:after{width:100%;background:#3A3B74}
+			header.sticky-header{position:fixed;top:0;left:0;width:100%;background:#fff;z-index:99;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:-webkit-transform 0.5s;-moz-transition:-moz-transform 0.5s;-o-transition:-o-transform 0.5s;transition:transform 0.5s}
+			header.sticky-header.active{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);-webkit-transition:-webkit-transform 0.5s;-moz-transition:-moz-transform 0.5s;-o-transition:-o-transform 0.5s;transition:transform 0.5s}
+			header.sticky-header .logo{max-width:50px}
+			header.sticky-header .container{padding:15px 30px}
+			.header-blk{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+			.hamburger{padding:3px 0;cursor:pointer}
+			.hamburger span{display:block;height:2px;width:22px;margin-bottom:4px;background:#888}
+			.logo{max-width:66px}
+			.intro-blk{min-height:500px;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}
+			.intro-blk.home h1{font-size:52px;line-height:1.3em;font-weight:700;padding-bottom:40px;max-width:950px}
+			.subpage .intro-blk{min-height:410px;border-bottom:1px solid #54595F}
+			.subpage .intro-blk h1{padding-bottom:90px}
+			@media screen and (max-width:1024px)
+			{
+				.intro-blk{min-height:410px}
+			.intro-blk.home h1{font-size:48px;max-width:850px}
+			.intro-blk.home .intro-content{padding: 100px 0}
+			.subpage .intro-blk{min-height:310px}}
+			@media screen and (max-width:767px)
+			{.intro-blk.home h1{font-size:42px}
+			.subpage .intro-blk{min-height:300px}
+			.subpage .intro-blk h1{padding-bottom:0}
+			header .container{border-bottom:1px solid #e7e7e7}
+			header .links{position:absolute;left:0;-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:-webkit-transform 0.5s;-moz-transition:-moz-transform 0.5s;-o-transition:-o-transform 0.5s;transition:transform 0.5s;top:100%;width:100%;background:#fff;border-bottom:1px solid #e7e7e7;padding:10px 35px;z-index:-1}
+			header .links li{display:block}
+			header .links li a{display:block;width:100%}
+			header .links li a:after{display:none}
+			header .links.active{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);-webkit-transition:-webkit-transform 0.5s;-moz-transition:-moz-transform 0.5s;-o-transition:-o-transform 0.5s;transition:transform 0.5s}}
+				
+
+			.dmtop1 {
+    background-color: #3C3D41;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    bottom: -100px;
+    border-radius: 3px;
+    right: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff !important;
+    cursor: pointer;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
+    -ms-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
+}
+.dmtop1:hover{
+    background: #eea412;
+    color: black;
+}
+	
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+		
+		</style>
+		<script>
+	     var templateUri = "wp-content/themes/nyl/index.html";
+	     var blogUri = "index.html";
+	     var tmpl_url = 'TMPL_URL.html';
+	    </script>
+	
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script defer>
+			var cssArr = ['https://www.nyl.technology/wp-content/themes/nyl/css/app.css'];
+			for(var i = 0; i < cssArr.length; i++) {
+				var link = document.createElement('link');
+				link.setAttribute('rel', 'stylesheet');
+				link.setAttribute('type', 'text/css');
+				link.setAttribute('href', cssArr[i]);
+				document.getElementsByTagName('head')[0].appendChild(link);
+			}
+		</script>
+		<noscript>
+			<style media="screen">
+				.render-blk{ opacity: 1; }	
+			</style>
+		</noscript>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174042796-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-174042796-1');
+</script>
+
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="header-blk">
+					<div class="logo">
+						<img defer src="wp-content/themes/nyl/images/logo.png">
+					</div>
+					<div class="hamburger only-mob">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="links">
+						<ul>
+														<li><a href="index.html">Home</a></li>
+														<li><a >About us</a></li>
+														<li><a >Case Studies</a></li>
+														<li><a >Careers</a></li>
+														<li><a >Contact Us</a></li>
+													</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<header class="sticky-header">
+			<div class="container">
+				<div class="header-blk">
+					<div class="logo">
+						<img defer src="wp-content/themes/nyl/images/logo.png">
+					</div>
+					<div class="hamburger only-mob">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="links">
+						<ul>
+														<li><a href="index.html">Home</a></li>
+														<li><a >About us</a></li>
+														<li><a >Case Studies</a></li>
+														<li><a >Careers</a></li>
+														<li><a >Contact Us</a></li>
+													</ul>
+					</div>
+				</div>
+			</div>
+		</header>  
+		<div class="intro-blk home">
+			<div class="container">
+				<div class="intro-content">
+					<div class="wow slideInDown">
+						<h1>Together we can build your technology and take it to new heights</h1>
+					</div>
+					<div class="button primary bolder wow slideInDown" data-wow-delay=".1s">
+						<a>Explore</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="render-blk">
+			<a id="scrollUp1" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
+			<section>
+				<div class="banner-img" id="next">
+					<img defer src="wp-content/uploads/2020/10/banner-1-1-min.jpg">
+				</div>
+				<div class="container">
+					<div class="row titles">
+						<div class="col-md-5 wow fadeIn">
+							<h2>Success through our unique team</h2>
+						</div>
+						<div class="col-md-7 wow fadeIn" data-wow-delay=".2s" >
+							<h5>The success of an idea depends on the team. We have dedicated teams that are passionate about what they do and will provide your project with a full cycle web/mobile/IoT development outsourcing services.</h5>
+						</div>
+					</div>
+					<div class="row card-section">
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".">
+										<i class='fas fa-desktop'></i>
+										<h4>Custom Application Development</h4>
+										<p>Modern applications deliver the experience customers want and the results you need. We build that.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".2s">
+										<i class='fas fa-mobile-alt'></i>
+										<h4>Native /Hybrid Application</h4>
+										<p>Whether developing for native iOS, Android, or Hybrid application, the mobile development team helps enterprise organizations and startups create and implement a mobile strategy and execution plan that suits their business needs and gets products to market quickly.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".4s">
+										<i class='fas fa-shuttle-van'></i>
+										<h4>IoT</h4>
+										<p>Our experience and expertise has put us at the forefront of IoT on vehicles, as well as smart asset monitoring, logistics, and fleet management.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".">
+										<i class='fas fa-chart-line'></i>
+										<h4>API Development</h4>
+										<p>Our development team are experts in decoupling monolithic applications for stability and extensibility as well as creating public APIs and key management practices for service-oriented applications.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".2s">
+										<i class='fas fa-briefcase'></i>
+										<h4>ECommerce</h4>
+										<p>Our team of certified Magento developers have the insight and skillset nurtured over years of experience in deep customization and development of Magento.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".4s">
+										<i class='fas fa-user-alt'></i>
+										<h4>IT Staffing</h4>
+										<p>Over the years, we have employed, contracted, and partnered with some of the best and brightest tech talent in the country.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+										</div>
+					<div class="industry-section">
+						<h2>Industries</h2>
+						<p>Global enterprises are making the shift to digital technology to produce better business outcomes.
+
+Only NYL Technology has the ability to lead digital transformations for customers by modernizing and integrating their mainstream IT, and by deploying digital solutions at scale for a successful digital future.</p>
+					</div>
+					<div class="row card-section">
+												<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".">
+										<i class='fas fa-taxi'></i>
+										<h4>Automotive</h4>
+										<p>Our approaches and technologies offer our customers the ability to manufacture their products faster, improve efficiencies and transform to sustainable supply chains.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".2s">
+										<i class='fas fa-rainbow'></i>
+										<h4>Insurance</h4>
+										<p>Insurers are seeking to build a digital future while transforming their legacy businesses. Digital insurance offers the opportunity to innovate and enter new markets rapidly, manage risk more effectively and deliver the customer experience today’s buyers expect.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+											<div class="col-md-4">
+							<div class="prim-card">
+								<div class="content-blk">
+									<div class="wow fadeIn" data-wow-delay=".4s">
+										<i class='far fa-user-circle'></i>
+										<h4>Public Sector</h4>
+										<p>Government runs better with the right technology and a customer-focused partner. Whether it's modernizing or delivering better services to citizens, we help public sector organizations fulfill their missions and make the most of their resources.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+										</div>
+				</div>
+				<div class="about-section">
+					<div class="d-flex">
+						<div class="img-blk">
+							<img defer src="wp-content/uploads/2020/10/about-1-min.jpg">
+						</div>
+						<div class="content-blk wow slideInUp">
+							<h2>About us</h2>
+							<p>NYL Technology helps our customers across the entire Enterprise Technology Stack with differentiated industry solutions. We modernize IT, optimize data architectures, and make everything secure, scalable and orchestrated across public, private and hybrid clouds.</p>
+							<div class="details-blk">
+								<div class="details">
+									<strong>~50</strong>Cutomers
+								</div>
+								<div class="details">
+									<strong>10+</strong>Solution Partners
+								</div>
+							</div>
+							<div class="button primary white wow slideInUp" data-wow-delay=".1s">
+								<a>Find Out More</a>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="trusted-blk">
+							<h5>Trusted by</h5>
+							<div class="row">
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img1-1.png">
+								</div>
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img2-1.png">
+								</div>
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img3-1.png">
+								</div>
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img4-1.png">
+								</div>
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img5-1.png">
+								</div>
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img6-1.png">
+								</div>
+																<div class="col-md-3 col-sm-6">
+									<img defer src="wp-content/uploads/2020/10/img7-1.png">
+								</div>
+															
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lavender-section">
+					<div class="container wow fadeIn">
+						<h5>The human element</h5>
+						<h2>What's our secret? Great people.</h2>
+						<p>Great people drive great success. Join us and be a part of the passionate team and drive the next digital transformation service.</p>
+						<div class="button primary">
+							<a>Join us</a>
+						</div>
+					</div>
+				</div>
+								<div class="gray-section">
+					<div class="container">
+						<div class="row wow fadeIn">
+							<div class="col-md-9">
+								<h2>Unlock the power of digital and begin your organization’s transformation.</h2>
+<h3>Get in touch with a sales professional.</h3>							</div>
+							<div class="col-md-3">
+								<div class="button primary white">
+									<a>contact us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+						<footer>
+				<div class="footer-blk1">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 links">
+								<ul>
+																		<li><a href="index.html">Home</a></li>
+																		<li><a href="#">About us</a></li>
+																		<li><a href="#">Case Studies</a></li>
+																		<li><a href="#">Career</a></li>
+																		<li><a href="#">Contact</a></li>
+																	</ul>
+							</div>
+							<div class="col-md-4 social-icon">
+								<h5>Socialize</h5>
+																<ul>
+																		<li><a href="https://www.facebook.com/nyltechnology"><i class="fa fa-facebook"></i></a></li>
+																		<li><a href="https://www.linkedin.com/company/new-slate/"><i class="fa fa-linkedin"></i></a></li>
+																		
+								</ul>
+							</div>
+							<div class="col-md-4" class="form">
+								<form action="mailto:rajendran@nyl.com">
+									
+									<input type="text" id="fname" name="firstname" placeholder="Name">
+								
+								
+									<input type="text" id="lname" name="lastname" placeholder="Email Id">
+								
+									<input type="text" id="coment" name="comment" placeholder="Comment">
+								  
+									<input type="submit" value="Submit">
+								  </form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-btm">        
+			        <div class="container"> 
+			        	 <div class="d-flex">
+				            <div class="footer-copyright">
+				                <p>©️ NYL10 Software Private Ltd 2020</p>
+				            </div>
+				            <div class="links">
+					            <ul>
+					            										<li><a href="#">Legal</a></li>
+																		<li><a href="#">Privacy</a></li>
+																		<li><a href="#">Sitemap</a></li>
+														            </ul>
+				            </div>
+			        	 </div>
+			        </div>
+			    </div>
+			</footer>
+		</div>	
+	  	<script defer>
+		  	var jsArr = ['https://www.nyl.technology/wp-content/themes/nyl/js/app.js'];
+			for(var j = 0; j < jsArr.length; j++) {
+		        var script = document.createElement('script')
+		        script.setAttribute('type', 'text/javascript')
+		        script.setAttribute('src', jsArr[j])
+		        document.getElementsByTagName('head')[0].appendChild(script)
+		    }
+	    </script>
+
+	    <script src="wp-content/themes/nyl/js/script.js"></script>
+	    <script type="text/javascript">
+	    	$(".tab-blk").click(function(){
+			  var prod_colors = this.getAttribute('data-id');
+			  $('.tabshow').hide();
+			 $("#"+prod_colors).slideDown();
+			});
+	    </script>
+	</body>
+
+
+</html>
